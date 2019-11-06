@@ -1,64 +1,101 @@
-html,body {
-   font-family:  arial,sans-serif;
+html,
+body {
+    font-family: arial, sans-serif;
 }
+
 li {
     list-style: none;
     display: inline-block;
     margin-right: 2rem;
     padding-top: 0.5rem;
 }
+
 a {
     text-decoration: none;
     color: black;
-
 }
-.left {
+
+.main-menu {
+    line-height: 1rem;
+    height: 4rem;
+}
+
+.menu-left {
     float: left;
 }
-.right {
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu-right {
     float: right;
 }
+
 .container {
     margin-left: 0;
     margin-right: 0;
-    width: auto;;
+    width: auto;
+    ;
 }
-.avatar {
-    vertical-align: middle;
 
+.img-avatar {
+    vertical-align: middle;
+    border-radius: 50%;
 }
-.img{
+
+.img-logo {
     margin-left: auto;
     margin-right: auto;
     display: block;
     width: 15%;
-
 }
-.txtSearch {
+
+.input-search {
     margin-left: auto;
     width: 30%;
-    height: 30px;           
+    height: 40px;
     line-height: 30px;
     margin-right: auto;
     margin-left: auto;
     text-align: left;
     padding-left: 1rem;
+    font: 16px arial, sans-serif;
+    line-height: 34px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+    padding-left: 2.5rem;
 }
-.search {
+
+.input-search:focus {
+    outline: white;
+}
+
+.form-search {
+    margin-top: 1rem;
     text-align: center;
 }
-.content{
+
+.content {
     padding-top: 10vh;
 }
 
-nav {
-    line-height: 40px;
-}
-.googlesearch {
-    margin-top: 2%;
-    line-height: 30px;
+.btn-search {
+    margin-top: 2rem;
+    line-height: 2rem;
     background-color: #f2f2f2;
-  
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+}
+
+.btn-search:hover {
+    cursor: pointer;
+    border: 1px solid lightgray;
 }
 
 .footer {
@@ -70,3 +107,26 @@ nav {
     color: white;
 }
 
+.form-search #icon-search {
+    position: absolute;
+    margin-right: 3em;
+    padding: 0.9rem;
+    cursor: pointer;
+    color: #9AA0A6;
+}
+
+.form-search #icon-mic {
+    position: absolute;
+    margin-left: -3em;
+    padding: 0.9rem;
+    cursor: pointer;
+    color: #9AA0A6;
+}
+
+.form-search #icon-keyboard {
+    position: absolute;
+    margin-left: -5em;
+    padding: 0.9rem;
+    cursor: pointer;
+    color: #9AA0A6;
+}
