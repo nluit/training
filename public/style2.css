@@ -9,6 +9,7 @@ h3 {
     font-size: 20px;
     line-height: 1.3;
     font-weight: normal;
+    margin-bottom: -1rem
 }
 
 li {
@@ -21,6 +22,11 @@ li {
 a {
     text-decoration: none;
     color: #5f6368;
+}
+
+.container {
+    left: 0;
+    right: 0;
 }
 
 .img-logo {
@@ -51,7 +57,8 @@ a {
 }
 
 .input-search:focus {
-    outline: none;
+    outline: lightgray;
+    border: 1px solid lightgray;
 }
 
 .content {
@@ -70,13 +77,17 @@ a {
     vertical-align: middle;
 }
 
-.main-menu {
-    margin-top: -2rem;
+#menu-item {
     margin-left: 8rem;
 }
 
+.main-menu {
+    margin-top: -2rem;
+    border-bottom: 1px solid lightgray;
+}
+
 #space {
-    margin-left: 8rem;
+    margin-left: 6rem;
 }
 
 .test:after {
@@ -110,17 +121,16 @@ a:hover {
     color: #1A73E8;
 }
 
-.main-menu ul li a:active {
+.active {
     color: #1A73E8;
     padding-bottom: 1rem;
     border-bottom: 3px solid #1A73E8;
 }
 
-.footer {
-    margin-top: auto;
-    height: 50px;
-    line-height: 50px;
-    margin-left: 8rem;
+.main-menu ul li a:active {
+    color: #1A73E8;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #1A73E8;
 }
 
 .form-search #icon-search {
@@ -139,10 +149,62 @@ a:hover {
     color: #4285f4;
 }
 
+.input-search:hover {
+    box-shadow: 0 0 10px #aaa8a8;
+}
+
 #result-header {
     color: #1a0dab;
 }
 
 #result-link {
     color: green;
+}
+
+#btn-tools {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+#btn-tools:hover {
+    color: gray;
+    background-color: #f2f2f2;
+    border: 2px solid lightgray;
+    display: flex;
+}
+
+.footer {
+    margin-top: 3rem;
+    background-color: #F2F2F2;
+    height: 100%;
+    padding-bottom: 5px;
+}
+
+.footer-address {
+    padding-top: 1rem;
+    border-top: 1px solid lightgray;
+    display: flex;
+}
+
+.footer-menu {
+    padding-top: 1rem;
+    border-top: 1px solid lightgray;
+    display: flex;
+}
+
+#help {
+    margin-left: 8rem
+}
+
+#address {
+    margin-left: 8rem;
+}
+
+#location {
+    list-style: square !important;
+    border-left: 1px solid lightgray;
+    padding-left: 1rem;
+}
+
+.footer-menu li:hover {
+    text-decoration: underline;
 }
